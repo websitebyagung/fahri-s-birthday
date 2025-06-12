@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 15th Birthday Fahri!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="particles-container" id="particles-js"></div>
+    <div class="floating-balloons"></div>
+
+    <div class="container">
+      <header class="hero">
+        <div class="hero-content">
+          <h1 class="title glitch" data-text="HAPPY BIRTHDAY FARHI!">
+            HAPPY BIRTHDAY DE FAHRI!
+          </h1>
+          <div class="birthday-info">
+            <div class="age-box pulse">
+              <span id="age">15</span>
+              <span>Years Old</span>
+            </div>
+            <div class="date-box">
+              <i class="fas fa-calendar-alt"></i>
+              <span>June 20, 2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="fahri.png" alt="Farhi" class="profile-pic" />
+          <div class="circle-animation"></div>
+        </div>
+      </header>
+
+      <main>
+        <section class="countdown-section">
+          <h2 class="section-title">Menuju Ulang Tahunmu</h2>
+          <div class="countdown-container">
+            <div class="countdown-box">
+              <span id="days">00</span>
+              <span>DAYS</span>
+            </div>
+            <div class="countdown-box">
+              <span id="hours">00</span>
+              <span>HOURS</span>
+            </div>
+            <div class="countdown-box">
+              <span id="minutes">00</span>
+              <span>MINUTES</span>
+            </div>
+            <div class="countdown-box">
+              <span id="seconds">00</span>
+              <span>SECONDS</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="music-section">
+          <h2 class="section-title">Lagu Terbaik Untukmu</h2>
+          <div class="music-player">
+            <div class="album-art">
+              <img src="satu.png" alt="Album Art" id="album-art" />
+              <div class="vinyl"></div>
+            </div>
+            <div class="player-controls">
+              <h3 id="song-title">Happy Birthday Fahri</h3>
+              <div class="progress-container">
+                <input type="range" id="progress" min="0" max="100" value="0" />
+                <div class="time-display">
+                  <span id="current-time">0:00</span>
+                  <span id="duration">0:00</span>
+                </div>
+              </div>
+              <div class="controls">
+                <button id="prev-btn">
+                  <i class="fas fa-step-backward"></i>
+                </button>
+                <button id="play-btn"><i class="fas fa-play"></i></button>
+                <button id="next-btn">
+                  <i class="fas fa-step-forward"></i>
+                </button>
+                <div class="volume-control">
+                  <button id="volume-btn">
+                    <i class="fas fa-volume-up"></i>
+                  </button>
+                  <input
+                    type="range"
+                    id="volume"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.7"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery-section">
+          <h2 class="section-title">Galerie Fahri</h2>
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <img src="satu.png" alt="Memory 1" />
+              <div class="gallery-overlay">
+                <h3>Ning Trisi Kayae Mah</h3>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="dua.png" alt="Memory 2" />
+              <div class="gallery-overlay">
+                <h3>Ncang Takon Gaya Apa</h3>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="tiga.png" alt="Memory 3" />
+              <div class="gallery-overlay">
+                <h3>Sadakan kece baka go kacamata ireng mah</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="wishes-section">
+          <h2 class="section-title">Kirim pesan Terbaik Untuk Kaka</h2>
+          <form id="wish-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                placeholder="Your Birthday Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-send">
+              <span>kirim pesam terbaikmu ke ka agung</span>
+              <i class="fab fa-whatsapp"></i>
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>Made with <i class="fas fa-heart"></i> for Farhi's 15th Birthday</p>
+        <div class="social-links">
+          <a href="https://instagram.com/agngubdllah_" class="social-link"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://facebook.com/agungubaidillah" class="social-link"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://youtube.com/agungubaidillah" class="social-link"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+
+    <audio id="audio-player">
+      <source src="ultah.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
